@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "construction-ecosystem-dev"
+version = "0.1.0"
+description = ""
+authors = ["mrqwer <qlzpam45@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = {extras = ["all"], version = "^0.103.2"}
+sqlalchemy = {extras = ["asyncio"], version = "^2.0.22"}
+alembic = "^1.12.0"
+uvicorn = {extras = ["standard"], version = "^0.23.2"}
+pydantic = "^2.4.2"
+asyncpg = "^0.28.0"
+pydantic-settings = "^2.0.3"
+psycopg2-binary = "^2.9.9"
+fast-captcha = "^0.2.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
